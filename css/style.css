@@ -1,0 +1,886 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ce6d06;
+    --secondary-color: #3f3a64;
+    --bg-gray: #eeeeee;
+    --text-gray: #666666;
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --span-text: #7e7d7d;
+    --bg-lightgray: #2a2420;
+    --about-font-color: #c2c2c2;
+}
+
+.banner-bottom_info h3,
+.product-heading h3,
+.service-left h3,
+.gallery h3,
+.testimonial-heading h3,
+.blog-heading h3 {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
+}
+
+.product-about h4,
+.service-right h4,
+.carousel-item h4,
+.blog-info h4 {
+    font-size: 22px;
+    line-height: 28px;
+    color: #3f3a64;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.banner-bottom_info p,
+.product-heading p,
+.product_info p,
+.service-left p,
+.service-right p,
+.gallery p,
+.testimonial-heading p,
+.carousel-item p,
+.blog-heading p,
+.blog-info p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--span-text);
+    opacity: .8;
+    letter-spacing: .5px;
+}
+
+.main-btn {
+    color: var(--text-white);
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    padding: 0.935rem 2.50rem;
+    cursor: pointer;
+    transition: 0.5s all;
+    outline: none;
+    border: none;
+}
+
+.main-btn:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Scroll bar Design */
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--span-text);
+}
+
+
+/* Navbar Design */
+
+.header_wrapper {
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(54, 45, 39, 0.9);
+}
+
+.navbar-brand {
+    color: var(--text-white);
+    font-size: 1.65rem !important;
+    font-weight: 700px;
+    transition: 0.5s all;
+}
+
+.navbar-brand i {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    transition: 0.5s all;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    opacity: 0.9;
+    color: var(--text-white);
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: rgba(255, 69, 0, 0.4) !important;
+    margin: 20px 4px;
+}
+
+.carousel-indicators li .active {
+    background-color: var(--primary-color);
+}
+
+.carousel-caption h5 {
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.carousel-caption p {
+    color: var(--text-white);
+    font-size: 1.4rem;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 49.5rem;
+}
+
+
+/* Banner Bottom Design */
+
+.banner-bottom_info {
+    padding: 20px;
+}
+
+.banner-bottom_info img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.banner-bottom_info img:hover {
+    transform: translateY(-8px);
+}
+
+.last-banner {
+    display: none;
+}
+
+
+/* Our Product Section Design */
+
+.product {
+    width: 100%;
+    overflow: auto;
+    padding: 25px 0;
+    background-color: #eee;
+    margin-top: 1.25rem;
+}
+
+.product_info {
+    padding: 10px;
+    width: 100%;
+}
+
+.product-about {
+    background-color: var(--text-white);
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-about img {
+    border-radius: 5px 5px 0 0;
+}
+
+.product-about h4:hover {
+    color: var(--primary-color);
+}
+
+
+/* Service Section Design */
+
+.service-right a {
+    color: var(--primary-color);
+    font-size: 26px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.service-right a:hover {
+    opacity: 0.9;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.service-right h4:hover {
+    color: var(--primary-color);
+}
+
+
+/* Gallery Design */
+
+.gallery {
+    width: 100%;
+    overflow: auto;
+    padding: 25px 0;
+    background-color: #eee;
+}
+
+.gallery-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-image img {
+    cursor: pointer;
+    transition: 0.5s all;
+    border-radius: 5px;
+}
+
+.gallery-image img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+/* Testimonial Design */
+
+.testimonal .carousel-caption {
+    margin-top: -40px;
+    padding: 25px;
+}
+
+.testimonal .carousel-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.testimonal .carousel-item ul {
+    margin: 0 42%;
+}
+
+.testimonal .carousel-item ul li {
+    list-style: none;
+    float: left;
+    display: block;
+    margin: 20px auto;
+}
+
+.testimonal .carousel-item ul li a {
+    font-size: 18px;
+    color: var(--text-gray);
+    padding: 10px 10px 10px 19px;
+    transition: 0.5s all;
+}
+
+.testimonal .carousel-item ul li a:hover {
+    color: var(--primary-color);
+}
+
+.testimonal .carousel-control-prev,
+.testimonal .carousel-control-next {
+    width: 40px !important;
+    height: 70px;
+    text-align: center;
+    padding-top: 1rem;
+    /* margin-top: -20px !important; */
+    background-color: var(--primary-color);
+    top: 90px !important;
+}
+
+
+/* Blog Design */
+
+.blog {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-gray);
+}
+
+.blog-post {
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.blog-info {
+    width: 100%;
+    background-color: var(--text-white);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-image {
+    overflow: hidden;
+}
+
+.blog-info img {
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.blog-post img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.blog-links li {
+    list-style: none;
+    float: left;
+    margin-top: 25px;
+}
+
+.blog-links li a {
+    color: var(--text-gray);
+    font-size: 18px;
+    padding: 20px 5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.blog-links li a i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+
+/* Footer Design */
+
+.footer {
+    width: 100%;
+    overflow: auto;
+    background: #362d27;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 1.65rem !important;
+    font-weight: 700px;
+    padding-left: 5px;
+    transition: 0.5s all;
+}
+
+.footer-info i {
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.footer-info p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff5ee;
+    opacity: .8;
+    letter-spacing: .5px
+}
+
+.footer-info h6 {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #2a2420;
+    color: var(--text-white);
+    text-align: center;
+    overflow: auto;
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+
+/* About Page Design */
+
+.about-banner {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    background: url(../images/innerbg.jpg) center fixed;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.about-banner h2 {
+    margin-top: 40px;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-white);
+}
+
+.about-info {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-lightgray);
+}
+
+.about-left p span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    padding: 5px 10px;
+}
+
+.about-left h3 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--text-white);
+    padding: 0 10px;
+}
+
+.about-left p {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--about-font-color);
+    padding: 5px 10px;
+    opacity: 0.9;
+}
+
+.about-right img {
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* About Counter-1 Design */
+
+.about_counter {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-lightgray);
+}
+
+.about-left-counter {
+    padding: 0 !important;
+}
+
+.about-left-counter img {
+    border-radius: 5px;
+}
+
+.about-row {
+    width: 100%;
+    background-color: #362d27;
+    border-radius: 5px;
+}
+
+.about-right-counter {
+    padding: 20px 20px;
+}
+
+.about-right-counter h3 {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--text-white);
+    padding: 50px 30px 25px 30px;
+}
+
+.about-right-counter p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--about-font-color);
+    padding: 12px 30px 20px 30px;
+    opacity: 0.9;
+}
+
+
+/* About Service Design */
+
+.about-service {
+    width: 100%;
+    overflow: auto;
+    background-color: #362d27;
+}
+
+.about-service a {
+    color: var(--primary-color);
+    font-size: 26px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.about-service a:hover {
+    opacity: 0.9;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.about-service h4:hover,
+.about-team h4:hover {
+    color: var(--primary-color);
+}
+
+.about-service h4 {
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--text-white);
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.about-service p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--about-font-color);
+    padding: 10px;
+    opacity: 0.9;
+}
+
+
+/* About-location Design */
+
+.about-location {
+    width: 100%;
+    overflow: auto;
+    background: url(../images/banner4.jpg) center scroll;
+    background-size: cover;
+}
+
+.sub-about-location {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-location h4 .about-team h4 {
+    font-size: 38px;
+    line-height: 45px;
+    color: var(--text-white);
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.5s all;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.about-location p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-white);
+    padding: 10px;
+    opacity: 0.9;
+}
+
+
+/* About Team Design */
+
+.about-team {
+    width: 100%;
+    overflow: auto;
+    background-color: #362d27;
+}
+
+.about-team h2 {
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--text-white);
+    padding-bottom: 40px;
+}
+
+.about-team img {
+    border-radius: 5px;
+}
+
+.about-team h4 {
+    font-size: 22px;
+    color: var(--text-white);
+    font-weight: 600;
+    transition: 0.5s all;
+    cursor: pointer;
+    padding-top: 8px;
+}
+
+.about-team p {
+    font-size: 18px;
+    color: var(--about-font-color);
+}
+
+
+/* Contact Us Design */
+
+.contact-info {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-lightgray);
+}
+
+.contact-links li {
+    list-style: none;
+    float: left;
+}
+
+.contact-links li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 32px;
+    text-align: center;
+    opacity: 0.5;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    margin-right: 20px;
+}
+
+.contact-links li a:hover {
+    opacity: 1;
+}
+
+.contact-links h4 {
+    color: var(--text-white);
+    font-size: 1.42rem;
+    display: inline-block;
+    padding: 12px 0 5px 0;
+}
+
+.contact-links p {
+    color: var(--about-font-color);
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-size: 1.25rem;
+    padding: 8px 0 0 45px;
+}
+
+.contact-links p:hover {
+    color: var(--text-white);
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    padding: 4px;
+    background-color: #362d27;
+    border-radius: 5px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    outline: none;
+    border: 1px solid var(--bg-lightgray);
+    border-radius: 5px;
+    background-color: #362d27;
+    color: var(--about-font-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.contact-form a {
+    text-decoration: none;
+    float: right;
+    margin-right: 42px;
+    font-size: 1rem;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    color: var(--text-white);
+}
+
+.contact-form a:hover {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+
+/* Our Type Of Coffee Page Design */
+
+.coffees {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-lightgray);
+}
+
+.nav-link img {
+    width: 100px;
+    border-radius: 50%;
+    height: 80px;
+    margin: 4px 2px;
+}
+
+.coffees .nav-tabs {
+    border-bottom: none !important;
+}
+
+.coffees .nav-tabs .nav-link {
+    border: none !important;
+}
+
+.coffees .nav-link {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.coffees .nav-tabs .nav-link.active {
+    background-color: #362d27 !important;
+    border-color: transparent !important;
+}
+
+.coffees .nav-link:hover {
+    background-color: #362d27 !important;
+    border: none !important;
+}
+
+.tab-pane {
+    width: 100%;
+    overflow: auto;
+    background-color: #362d27;
+}
+
+.tab-pane-right h2 {
+    color: var(--primary-color);
+    font-size: 2.87rem;
+    font-weight: 700;
+    padding-top: 35px;
+}
+
+.tab-pane-right h4 {
+    color: var(--text-white);
+    font-size: 1.75rem;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.tab-pane-right p {
+    color: var(--about-font-color);
+    font-size: 1.4rem;
+    padding: 5px 0;
+}
+
+
+/* Discover Our Coffee Design */
+
+.discover-our-coffee {
+    width: 100%;
+    overflow: auto;
+    background-color: #362d27;
+}
+
+.discover-our-coffee h2 {
+    color: var(--text-white);
+    font-size: 2.65rem;
+    font-weight: 600;
+    padding-top: 35px;
+}
+
+.discover-our-coffee p {
+    color: var(--about-font-color);
+    font-size: 1.25rem;
+    padding: 10px 0;
+}
+
+.play-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--text-white);
+    font-size: 1.45rem;
+    padding: 15px 12px;
+    margin-top: 10px;
+}
+
+.play-button i {
+    font-size: 1.95rem;
+    margin-right: 10px;
+}
+
+
+/* Order Coffee Design */
+
+.coffee-order {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--bg-lightgray);
+}
+
+.order-now {
+    width: 100%;
+    background-color: #362d27;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.order-now h2 {
+    color: var(--text-white);
+    font-size: 2.2rem;
+    padding: 15px 10px;
+}
+
+.order-now p {
+    color: var(--about-font-color);
+    font-size: 1.25rem;
+    padding: 0 10px 8px 10px;
+}
+
+.order-image {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.order-image img {
+    height: 100%;
+}

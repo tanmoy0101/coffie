@@ -1,0 +1,115 @@
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 991px) {
+    /* Default Design */
+    .main-btn {
+        padding: 0.635rem 1.35rem;
+        font-size: 1rem;
+        display: block;
+        margin: auto;
+    }
+    /* Navbar Customize */
+    .collapse.show {
+        width: 100%;
+        text-align: center !important;
+    }
+    .form-inline {
+        display: none !important;
+    }
+    .carousel-image {
+        width: 100%;
+        height: 28.5rem;
+    }
+    .carousel-caption h5 {
+        font-size: 28px;
+        line-height: 15px;
+    }
+    .carousel-caption p {
+        font-size: 0.925rem;
+    }
+    .carousel-indicators {
+        bottom: -25px !important;
+    }
+    .navbar-toggler:focus {
+        outline: none !important;
+    }
+    /* Banner Design */
+    .last-banner {
+        display: block;
+    }
+    /* Contact page Design */
+    .contact-form a {
+        float: none;
+        text-align: center;
+        margin: 0 8px;
+    }
+    /* Coffee Order Design */
+    .order-now h2 {
+        font-size: 1.45rem;
+    }
+    .order-now p {
+        font-size: 1rem;
+    }
+    .order-now button {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Default Design */
+    .banner-bottom_info h3,
+    .product-heading h3,
+    .service-left h3,
+    .gallery h3,
+    .testimonial-heading h3,
+    .blog-heading h3 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .product-about h4,
+    .service-right h4,
+    .carousel-item h4,
+    .blog-info h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .banner-bottom_info p,
+    .product-heading p,
+    .product_info p,
+    .service-left p,
+    .service-right p,
+    .gallery p,
+    .testimonial-heading p,
+    .carousel-item p,
+    .blog-heading p,
+    .blog-info p {
+        font-size: 15px;
+    }
+    /* footer design */
+    .footer-info p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer-info h6 {
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+    .copyright {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    /* Coffee Order Design */
+    .order-now h2 {
+        font-size: 1.45rem;
+    }
+    .order-now p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    /* Coffee tab menu Design */
+    .coffees .nav-tabs {
+        margin-left: 20px;
+    }
+}
